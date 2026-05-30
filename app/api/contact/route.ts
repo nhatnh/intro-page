@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: 'TN Homes LLC <noreply@tnhomes.us>',
       to: 'contact@tnhomes.us',
-      replyTo: email,
+      reply_to: email,
       subject: `Contact Form: ${subject}`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px; color: #0f0f0f;">
