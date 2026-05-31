@@ -10,3 +10,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@keyframes kenBurns {
+  from { transform: scale(1) translate(0, 0); }
+  to   { transform: scale(1.08) translate(-1.5%, -1%); }
+}
+
+.slide-kenburns {
+  animation: kenBurns 7s ease-out forwards;
+}

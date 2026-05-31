@@ -1,55 +1,10 @@
 import Link from 'next/link'
+import HeroSlideshow from '@/components/HeroSlideshow'
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
-
-        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <p className="text-gold text-xs font-semibold uppercase tracking-[0.3em] mb-6">
-            Seattle &amp; Greater Washington
-          </p>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white leading-[1.05] mb-8 tracking-tight">
-            We build homes<br />
-            <span className="font-semibold">people love.</span>
-          </h1>
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-12">
-            Single family homes, ADUs, DADUs, and full remodels — built with care, managed with AI,
-            and delivered with transparency. Serving Seattle and surrounding areas in Washington State.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center bg-white text-dark text-sm font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200"
-            >
-              Start a Project
-            </Link>
-            <Link
-              href="/about"
-              className="inline-flex items-center justify-center border border-gray-700 text-white text-sm font-medium px-8 py-4 rounded-full hover:border-gray-500 transition-colors duration-200"
-            >
-              Meet the Team
-            </Link>
-          </div>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-xs text-gray-600 uppercase tracking-widest">Scroll</span>
-          <div className="w-px h-12 bg-gradient-to-b from-gray-600 to-transparent" />
-        </div>
-      </section>
+      <HeroSlideshow />
 
       {/* Services */}
       <section className="py-32 px-6 bg-white">
