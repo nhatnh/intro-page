@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AboutHero from '@/components/AboutHero'
 
 export const metadata: Metadata = {
   title: 'About Us — TN Homes LLC',
@@ -10,17 +11,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-40 pb-24 px-6 bg-dark text-white">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-gold text-xs font-semibold uppercase tracking-[0.3em] mb-6">Who We Are</p>
-          <h1 className="text-5xl md:text-7xl font-light leading-tight tracking-tight">
-            Hardworking professionals.<br />
-            <span className="font-semibold">Honest work.</span><br />
-            <span className="text-gold font-medium text-3xl md:text-4xl">Using AI to optimize project management and save time &amp; money.</span>
-          </h1>
-        </div>
-      </section>
+      <AboutHero />
 
       {/* Intro */}
       <section className="py-28 px-6 bg-white">

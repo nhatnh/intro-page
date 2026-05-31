@@ -15,7 +15,33 @@ body {
   from { transform: scale(1) translate(0, 0); }
   to   { transform: scale(1.08) translate(-1.5%, -1%); }
 }
-
 .slide-kenburns {
   animation: kenBurns 7s ease-out forwards;
+}
+
+@keyframes phoneRing {
+  0%, 50%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(-18deg); }
+  20% { transform: rotate(18deg); }
+  30% { transform: rotate(-12deg); }
+  40% { transform: rotate(12deg); }
+}
+.animate-phone-ring {
+  animation: phoneRing 3s ease-in-out infinite;
+}
+
+@keyframes pulseRing {
+  0%   { transform: scale(1);   opacity: 0.5; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+.animate-pulse-ring-1 { animation: pulseRing 2.5s ease-out infinite; }
+.animate-pulse-ring-2 { animation: pulseRing 2.5s ease-out infinite 0.8s; }
+.animate-pulse-ring-3 { animation: pulseRing 2.5s ease-out infinite 1.6s; }
+
+@keyframes emailFloat {
+  0%, 100% { transform: translateY(0px)   rotate(-4deg); }
+  50%       { transform: translateY(-22px) rotate(4deg); }
+}
+.animate-email-float {
+  animation: emailFloat 4s ease-in-out infinite;
 }

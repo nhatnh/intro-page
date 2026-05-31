@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import ContactHero from '@/components/ContactHero'
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
@@ -38,16 +39,7 @@ export default function ContactPage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="pt-40 pb-20 px-6 bg-dark text-white">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-gold text-xs font-semibold uppercase tracking-[0.3em] mb-6">Reach Out</p>
-          <h1 className="text-5xl md:text-7xl font-light leading-tight tracking-tight">
-            Let&apos;s talk about<br />
-            <span className="font-semibold">your project.</span>
-          </h1>
-        </div>
-      </section>
+      <ContactHero />
 
       {/* Contact section */}
       <section className="py-24 px-6 bg-white">

@@ -5,11 +5,6 @@ import Link from 'next/link'
 
 const slides = [
   {
-    url: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80',
-    tag: 'Single Family Homes',
-    caption: 'New construction, built to last',
-  },
-  {
     url: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1920&q=80',
     tag: 'ADU & DADU',
     caption: 'Maximize your property value',
@@ -30,9 +25,9 @@ const slides = [
     caption: 'Reimagine your living space',
   },
   {
-    url: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1920&q=80',
-    tag: 'Premium Curb Appeal',
-    caption: 'Homes Seattle is proud of',
+    url: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=1920&q=80',
+    tag: 'PRADU — Permit Ready ADU',
+    caption: 'Pre-approved ADU designs in Renton, WA',
   },
 ]
 
